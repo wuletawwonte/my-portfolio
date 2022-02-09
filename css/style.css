@@ -45,7 +45,7 @@ header nav a {
 .hero-section p {
   margin: 20px 0;
   font-family: 'Poppins', sans-serif;
-  color: #1A2236;
+  color: #1a2236;
   line-height: 21px;
   font-weight: 400;
 }
@@ -56,9 +56,7 @@ header nav a {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
-  background-color: #1A2236;
+  background-color: #1a2236;
   color: white;
   border: none;
 }
-
-
