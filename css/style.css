@@ -60,3 +60,11 @@ header nav a {
   color: white;
   border: none;
 }
+
+.projects-section {
+  margin-top: 32px;
+}
+
+.projects-section img {
+  width: 100%;
+}
