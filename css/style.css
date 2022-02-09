@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 * {
   margin: 0;
 }
@@ -31,7 +33,9 @@ header nav a {
 }
 
 .hero-section h2 {
+  width: 7ch;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 60px;
+  line-height: 60px;  
 }
