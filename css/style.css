@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+}
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+header {
+  background-image: url("../img/image_geometry_3.svg");
+  background-repeat: no-repeat;
+  padding: 25px;
+}
 
+header nav {
+  display: flex;
+  justify-content: end;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
