@@ -68,3 +68,12 @@ header nav a {
 .projects-section img {
   width: 100%;
 }
+
+.projects-section h2 {
+  margin-left: 16px;
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #1a2236;
+  font-weight: normal;
+}
