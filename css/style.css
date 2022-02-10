@@ -172,12 +172,18 @@ header nav a {
   display: grid;
 }
 
-.languages {
+.skill-set {
   padding: 50px;
-  background-image: url("../img/languages-bg.png");
-  background-color: #1C528A;
   color: white;
   font-family: "Poppins", sans-serif;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
+
+.languages {
+  background-image: url("../img/languages-bg.png");
+  background-color: #1C528A;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
