@@ -166,3 +166,8 @@ header nav a {
   font-size: 23px;
   font-weight: 700;
 }
+
+.my-skill-set {
+  margin-top: 40px;
+  display: grid;
+}
