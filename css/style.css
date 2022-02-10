@@ -81,6 +81,10 @@ header nav a {
   font-weight: normal;
 }
 
+.projects-container {
+  display: grid;
+}
+
 .project-item {
   background: transparent;
   display: flex;
