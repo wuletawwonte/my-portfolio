@@ -34,7 +34,7 @@ header nav a {
   padding-top: 30px;
 }
 
-.hero-section h2 {
+.hero-section h1 {
   width: 7ch;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -124,6 +124,7 @@ header nav a {
 }
 
 .project-actions > button {
+  cursor: pointer;
   background: #98dede;
   border-radius: 0;
   border: none;
@@ -164,6 +165,7 @@ header nav a {
 }
 
 .about-section > button {
+  cursor: pointer;
   margin-top: 32px;
   border: none;
   background: #1a2236;
