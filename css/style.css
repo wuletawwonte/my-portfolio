@@ -187,3 +187,11 @@ header nav a {
   background-repeat: no-repeat;
 }
 
+.frameworks {
+  background-image: url("../img/frameworks-bg.png");
+  background-color: #E2505C;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+
