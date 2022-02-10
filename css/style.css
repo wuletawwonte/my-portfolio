@@ -61,6 +61,8 @@ header nav a {
   border: none;
 }
 
+/* Projects section */
+
 .projects-section {
   margin-top: 32px;
 }
@@ -123,4 +125,40 @@ header nav a {
   height: 50px;
   width: 200px;
   font-size: 19px;
+}
+
+/* About section styling */
+
+.about-section {
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.about-section > h2 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: #1a2236;
+  font-weight: normal;
+}
+
+.about-section > p {
+  color: #1A2236;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.about-section > button {
+  margin-top: 32px;
+  border: none;
+  background: #1A2236;
+  width: 100%;
+  color: white;
+  height: 60px;
+  font-size: 19px;
+}
+
+.about-section > button > b{
+  font-size: 23px;
+  font-weight: 700;
 }
