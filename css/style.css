@@ -142,7 +142,7 @@ header nav a {
 }
 
 .about-section > p {
-  color: #1A2236;
+  color: #1a2236;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
   font-size: 19px;
@@ -151,14 +151,14 @@ header nav a {
 .about-section > button {
   margin-top: 32px;
   border: none;
-  background: #1A2236;
+  background: #1a2236;
   width: 100%;
   color: white;
   height: 60px;
   font-size: 19px;
 }
 
-.about-section > button > b{
+.about-section > button > b {
   font-size: 23px;
   font-weight: 700;
 }
