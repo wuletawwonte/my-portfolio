@@ -50,15 +50,21 @@ header nav a {
   font-weight: 400;
 }
 
-.hero-section > button {
+.start-collaboration-btn {
   margin-top: 20px;
+  cursor: pointer;
   height: 60px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
+  background-color: transparent;
+  color: #1a2236;
+  border: solid #1a2236 2px;
+}
+
+.start-collaboration-btn:hover {
   background-color: #1a2236;
   color: white;
-  border: none;
 }
 
 /* Projects section */
@@ -79,6 +85,10 @@ header nav a {
   font-family: "Playfair Display", serif;
   color: #1a2236;
   font-weight: normal;
+}
+
+.projects-container {
+  display: grid;
 }
 
 .project-item {
@@ -106,6 +116,11 @@ header nav a {
   font-size: 30px;
   font-weight: 300;
   line-height: 16px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 5px;
 }
 
 .project-actions > button {
@@ -161,4 +176,39 @@ header nav a {
 .about-section > button > b {
   font-size: 23px;
   font-weight: 700;
+}
+
+.my-skill-set {
+  margin-top: 40px;
+  display: grid;
+  gap: 16px;
+}
+
+.skill-set {
+  padding: 50px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.languages {
+  background-image: url("../img/languages-bg.png");
+  background-color: #1c528a;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.frameworks {
+  background-image: url("../img/frameworks-bg.png");
+  background-color: #e2505c;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.skills {
+  background-image: url("../img/skills-bg.png");
+  background-color: #febf52;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
