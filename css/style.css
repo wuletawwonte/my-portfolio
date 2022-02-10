@@ -183,23 +183,21 @@ header nav a {
 
 .languages {
   background-image: url("../img/languages-bg.png");
-  background-color: #1C528A;
+  background-color: #1c528a;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .frameworks {
   background-image: url("../img/frameworks-bg.png");
-  background-color: #E2505C;
+  background-color: #e2505c;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .skills {
   background-image: url("../img/skills-bg.png");
-  background-color: #FEBF52;
+  background-color: #febf52;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
-
-
