@@ -174,9 +174,10 @@ header nav a {
 
 .languages {
   padding: 50px;
-  background: #1C528A;
+  background-image: url("../img/languages-bg.png");
+  background-color: #1C528A;
   color: white;
   font-family: "Poppins", sans-serif;
-  background-image: url("../img/#.png");
   background-position: bottom right;
+  background-repeat: no-repeat;
 }
