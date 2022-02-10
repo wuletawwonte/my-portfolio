@@ -50,7 +50,7 @@ header nav a {
   font-weight: 400;
 }
 
-.hero-section > button {
+.start-collaboration-btn {
   margin-top: 20px;
   cursor: pointer;
   height: 60px;
@@ -62,7 +62,7 @@ header nav a {
   border: solid #1a2236 2px;
 }
 
-.hero-section > button:hover {
+.start-collaboration-btn:hover {
   background-color: #1a2236;
   color: white;
 }
@@ -116,6 +116,11 @@ header nav a {
   font-size: 30px;
   font-weight: 300;
   line-height: 16px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 5px;
 }
 
 .project-actions > button {
