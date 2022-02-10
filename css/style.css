@@ -36,7 +36,7 @@ header nav a {
 
 .hero-section h2 {
   width: 7ch;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
@@ -44,7 +44,7 @@ header nav a {
 
 .hero-section p {
   margin: 20px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1a2236;
   line-height: 21px;
   font-weight: 400;
@@ -54,7 +54,7 @@ header nav a {
   margin-top: 20px;
   height: 60px;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   background-color: #1a2236;
   color: white;
@@ -74,7 +74,7 @@ header nav a {
   margin-top: 40px;
   margin-bottom: 32px;
   font-size: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #1a2236;
   font-weight: normal;
 }
@@ -91,7 +91,7 @@ header nav a {
 
 .project-description {
   padding: 20px;
-  background: #1A2236;
+  background: #1a2236;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -100,19 +100,19 @@ header nav a {
 
 .project-description > h2 {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 300;
   line-height: 16px;
 }
 
 .project-actions > button {
-  background: #98DEDE;
+  background: #98dede;
   border-radius: 0;
   border: none;
   height: 30px;
-  padding: 0 10px; 
-  font-family: 'Poppins', sans-serif;
+  padding: 0 10px;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
