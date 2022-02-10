@@ -171,3 +171,12 @@ header nav a {
   margin-top: 40px;
   display: grid;
 }
+
+.languages {
+  padding: 50px;
+  background: #1C528A;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/#.png");
+  background-position: bottom right;
+}
