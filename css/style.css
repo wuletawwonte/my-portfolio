@@ -135,7 +135,7 @@ header nav a {
   height: 30px;
   padding: 0 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .see-project-btn {
@@ -144,7 +144,13 @@ header nav a {
   color: white;
   height: 50px;
   width: 200px;
-  font-size: 19px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.see-project-btn:hover {
+  background-color: white;
+  color: #1a2236;
 }
 
 /* About section styling */
