@@ -28,6 +28,10 @@ header nav a {
   font-size: 1.8rem;
 }
 
+.ic_menu {
+  width: 30px;
+}
+
 .hero-section {
   padding-left: 16px;
   padding-right: 16px;
