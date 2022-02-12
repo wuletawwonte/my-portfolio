@@ -28,6 +28,10 @@ header nav a {
   font-size: 1.8rem;
 }
 
+.ic_menu {
+  width: 30px;
+}
+
 .hero-section {
   padding-left: 16px;
   padding-right: 16px;
@@ -129,9 +133,9 @@ header nav a {
   border-radius: 0;
   border: none;
   height: 30px;
-  padding: 0 10px;
+  padding: 0 6px;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .see-project-btn {
@@ -140,7 +144,13 @@ header nav a {
   color: white;
   height: 50px;
   width: 200px;
-  font-size: 19px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.see-project-btn:hover {
+  background-color: white;
+  color: #1a2236;
 }
 
 /* About section styling */
