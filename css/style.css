@@ -270,6 +270,16 @@ header nav a {
   display: flex;
   flex-direction: column;
 }
+
+.labeled-element:focus-within {
+  border: 1px solid #1a2236;
+}
+
+.labeled-element > input:focus {
+  border: none;
+  outline: none;
+}
+
 .labeled-element > label {
   color: #7D7C84;
   font-size: 10px;
@@ -286,6 +296,13 @@ header nav a {
 
 .contact-form > textarea {
   padding: 15px 16px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contact-form > textarea:focus {
+  border: 1px solid #1a2236 ;
+  outline: none;
 }
 
 /* todo remove */
@@ -299,5 +316,8 @@ header nav a {
   color: white;
   font-size: 16px;
   font-weight: 500;
+  border: none;
+  padding: 10px 68px;
+  line-height: 24px;
 }
 
