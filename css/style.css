@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -231,6 +235,8 @@ header nav a {
   background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
   padding: 106px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form > h2 {
@@ -238,4 +244,10 @@ header nav a {
   font-family: "Playfair Display", serif;
   color: #1a2236;
   font-weight: normal;
+}
+
+.contact-form > p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 20px;
 }
