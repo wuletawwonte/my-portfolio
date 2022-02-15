@@ -230,24 +230,34 @@ header nav a {
 }
 
 /* Contact form styling starts here */
-.contact-form {
+.contact-form-contianer {
   margin-top: 35px;
-  background-image: url("../img/section_bg.svg");
+  background: #f9f9fa url("../img/section_bg.svg");
   background-repeat: no-repeat;
   padding: 106px 18px 18px 18px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
-.contact-form > h2 {
+.contact-form-contianer > h2 {
   font-size: 50px;
   font-family: "Playfair Display", serif;
   color: #1a2236;
   font-weight: normal;
 }
 
-.contact-form > p {
+.contact-form-contianer > p {
   font-size: 14px;
   line-height: 21px;
   margin-top: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submit-btn {
+  margin-top: 12px;
 }
