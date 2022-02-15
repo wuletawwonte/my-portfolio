@@ -11,7 +11,7 @@
 }
 
 header {
-  background-image: url("../img/image_geometry_3.svg");
+  background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
   padding: 25px;
 }
@@ -222,5 +222,12 @@ header nav a {
   background-image: url("../img/skills-bg.png");
   background-color: #febf52;
   background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+/* Contact form styling starts here */
+.contact-form {
+  margin-top: 35px;
+  background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
 }
