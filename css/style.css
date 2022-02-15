@@ -248,7 +248,7 @@ header nav a {
 
 .contact-form-container > p {
   font-size: 16px;
-  color: #1A2236;
+  color: #1a2236;
   font-weight: 400;
   line-height: 21px;
   margin-top: 20px;
@@ -275,23 +275,23 @@ header nav a {
   border: 1px solid #1a2236;
 }
 
-.labeled-element > input:focus {
-  border: none;
-  outline: none;
-}
-
-.labeled-element > label {
-  color: #7D7C84;
-  font-size: 10px;
-  line-height: 15px;
-}
-
 .labeled-element > input {
   border: none;
   padding: 0;
   margin: 4px 0 8px 0;
   color: #1a2236;
   font-weight: 400;
+}
+
+.labeled-element > input:focus {
+  border: none;
+  outline: none;
+}
+
+.labeled-element > label {
+  color: #7d7c84;
+  font-size: 10px;
+  line-height: 15px;
 }
 
 .contact-form > textarea {
@@ -301,7 +301,7 @@ header nav a {
 }
 
 .contact-form > textarea:focus {
-  border: 1px solid #1a2236 ;
+  border: 1px solid #1a2236;
   outline: none;
 }
 
@@ -315,4 +315,3 @@ header nav a {
   padding: 10px 68px;
   line-height: 24px;
 }
-
