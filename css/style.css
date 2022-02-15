@@ -230,5 +230,12 @@ header nav a {
   margin-top: 35px;
   background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
-  padding-top: 106px;
+  padding: 106px 18px 18px 18px;
+}
+
+.contact-form > h2 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: #1a2236;
+  font-weight: normal;
 }
