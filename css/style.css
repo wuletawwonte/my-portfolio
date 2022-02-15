@@ -305,11 +305,6 @@ header nav a {
   outline: none;
 }
 
-/* todo remove */
-.about-section {
-  display: none;
-}
-
 .submit-btn {
   margin-top: 12px;
   background-color: #1a2236;
