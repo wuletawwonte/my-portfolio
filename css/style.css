@@ -324,7 +324,7 @@ header nav a {
 
 .footer-container > a {
   text-decoration: none;
-  color: #92DCDC;
+  color: #92dcdc;
   display: flex;
   gap: 10px;
 }
@@ -336,4 +336,3 @@ header nav a {
   list-style: none;
   justify-content: space-between;
 }
-
