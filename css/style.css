@@ -401,12 +401,25 @@ header {
     transition: width 0.1s ease-in-out;
   }
 
+  .hero-section {
+    background-image: url("../img/image-geometry.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+    background-position-y: top;
+  }
+
+  .hero-section > img {
+    display: none;
+  }
+
   .hero-content {
-    max-width: 30%;
+    max-width: 50%;
   }
 
   .hero-content > h1 {
     font-size: 110px;
+    font-size: 9vw;
     line-height: 110px;
     color: #1a2236;
   }
