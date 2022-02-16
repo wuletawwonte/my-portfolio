@@ -315,3 +315,17 @@ header nav a {
   padding: 10px 68px;
   line-height: 24px;
 }
+
+/* Footer part styling starts here */
+.footer-container {
+  background: #1a2236;
+  padding: 32px 16px 40px 16px;
+}
+
+.footer-container > a {
+  text-decoration: none;
+  color: #92DCDC;
+  display: flex;
+  gap: 10px;
+}
+
