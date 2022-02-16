@@ -172,6 +172,7 @@ header {
 .about-section {
   padding: 16px;
   margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .about-section > h2 {
@@ -241,7 +242,6 @@ header {
 
 /* Contact form styling starts here */
 .contact-form-container {
-  margin-top: 35px;
   background: #f9f9fa url("../img/section_bg.svg");
   background-repeat: no-repeat;
   padding: 106px 18px 18px 18px;
