@@ -58,6 +58,7 @@ header {
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
+  color: #1a2236;
 }
 
 .hero-content p {
@@ -379,7 +380,7 @@ header {
     text-underline-offset: 8px;
   }
 
-  .nav-menu-item a:after {
+  .nav-menu-item a::after {
     content: "";
     background: #1a2236;
     display: block;
@@ -388,15 +389,29 @@ header {
     height: 2px;
   }
 
-  .active-menu a::after, .nav-menu-item:hover a::after, .nav-menu-item:active a::after {
+  .active-menu a::after,
+  .nav-menu-item:hover a::after,
+  .nav-menu-item:active a::after {
     content: "";
     background: #1a2236;
     display: block;
     position: sticky;
     width: 80%;
     height: 2px;
-    transition: width 0.1s ease-in;
+    transition: width 0.1s ease-in-out;
   }
 
+  .hero-content {
+    max-width: 30%;
+  }
 
+  .hero-content > h1 {
+    font-size: 110px;
+    line-height: 110px;
+    color: #1a2236;
+  }
+
+  .center-contained-section {
+    padding: 150px 160px 200px 160px;
+  }
 }
