@@ -45,14 +45,17 @@ header {
   flex-direction: column;
 }
 
-.hero-content {
+.hero-section > img {
+  margin-top: 32px;
+}
+
+.hero-left {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 30px;
-  margin-bottom: 32px;
 }
 
-.hero-content h1 {
+.hero-left h1 {
   width: 7ch;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -61,8 +64,8 @@ header {
   color: #1a2236;
 }
 
-.hero-content p {
-  margin: 20px 0;
+.hero-left p {
+  padding: 20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
   line-height: 21px;
@@ -401,30 +404,51 @@ header {
     transition: width 0.1s ease-in-out;
   }
 
-  .hero-section {
-    background-image: url("../img/image-geometry.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 45%;
-    background-position-y: top;
-  }
-
   .hero-section > img {
     display: none;
   }
 
   .hero-content {
-    max-width: 50%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;    
   }
 
-  .hero-content > h1 {
+  .hero-left {
+    padding: 10% 20px 200px 8%;
+    background: url("../img/image_dots.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 138px;
+    width: 50%;
+  }  
+  
+  .hero-right {
+    background: url("../img/image-geometry.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 50%;
+  }
+
+  .hero-left > h1 {
     font-size: 110px;
     font-size: 9vw;
     line-height: 110px;
     color: #1a2236;
   }
 
+  .start-collaboration-btn {
+    width: auto;
+    background-color: #1a2236;
+    color: white;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .center-contained-section {
     padding: 150px 160px 200px 160px;
   }
+
 }
