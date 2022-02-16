@@ -374,17 +374,29 @@ header {
   .nav-menu ul a {
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 20px;
     color: #1a2236;
     text-underline-offset: 8px;
   }
 
-  .nav-menu-item:hover a::after, .nav-menu-item:active a::after {
-    content: ' ';
+  .nav-menu-item a:after {
+    content: "";
     background: #1a2236;
     display: block;
-    width: 80%;
+    position: sticky;
+    width: 0%;
     height: 2px;
   }
+
+  .active-menu a::after, .nav-menu-item:hover a::after, .nav-menu-item:active a::after {
+    content: "";
+    background: #1a2236;
+    display: block;
+    position: sticky;
+    width: 80%;
+    height: 2px;
+    transition: width 0.1s ease-in;
+  }
+
 
 }
