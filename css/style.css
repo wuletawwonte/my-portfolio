@@ -17,19 +17,23 @@ html {
 header {
   background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
-  padding: 25px;
 }
 
-header nav {
+.nav-menu {
+  padding: 25px;
   display: flex;
   justify-content: end;
 }
 
-header nav a {
+.nav-menu a {
   text-decoration: none;
   color: black;
   font-weight: 800;
   font-size: 1.8rem;
+}
+
+.nav-menu ul {
+  display: none;
 }
 
 .ic_menu {
@@ -37,12 +41,18 @@ header nav a {
 }
 
 .hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 30px;
+  margin-bottom: 32px;
 }
 
-.hero-section h1 {
+.hero-content h1 {
   width: 7ch;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -50,7 +60,7 @@ header nav a {
   line-height: 60px;
 }
 
-.hero-section p {
+.hero-content p {
   margin: 20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
@@ -335,4 +345,46 @@ header nav a {
   display: flex;
   list-style: none;
   justify-content: space-between;
+}
+
+/* RWD styling code  */
+@media screen and (min-width: 992px) {
+  header {
+    background: none;
+  }
+
+  .nav-menu {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0px 0.5px 0px 0px #dddfe6;
+  }
+
+  .nav-menu > a {
+    display: none;
+  }
+
+  .nav-menu > ul {
+    display: block;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-menu ul a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1a2236;
+  }
+
+  .nav-menu li a::after {
+    content: '';
+    background-color: #1a2236;
+    width: 50px;
+    height: 2px;
+    margin-top: 25px;
+    margin-left: -50px;
+    position: absolute;
+  }
 }

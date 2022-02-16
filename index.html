@@ -10,7 +10,21 @@
   <body>
     <div class="wrapper">
       <header>
-        <nav>
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#footer">Contact</a>
+            </li>
+          </ul>
           <a href="#"
             ><img
               src="./img/ic_menu.svg"
@@ -21,22 +35,24 @@
       </header>
 
       <!-- Hero section starts here -->
-      <section class="hero-section">
-        <h1>Wuletaw Wonte</h1>
-        <p>
-          Hello! I am a full stack software developer! I can help you build a
-          product, feature or website. Taka a look of my works. If you like what
-          you see and have a project you need coded, don't hesitate and contact
-          me.
-        </p>
-        <button type="button" class="start-collaboration-btn">
-          Start Collaboration
-        </button>
+      <section class="hero-section" id="hero">
+        <div class="hero-content">
+          <h1>Wuletaw Wonte</h1>
+          <p>
+            Hello! I am a full stack software developer! I can help you build a
+            product, feature or website. Taka a look of my works. If you like
+            what you see and have a project you need coded, don't hesitate and
+            contact me.
+          </p>
+          <button type="button" class="start-collaboration-btn">
+            Start Collaboration
+          </button>
+        </div>
+        <img src="./img/image_geometry_2.svg" alt="Projects section image" />
       </section>
 
       <!-- Projects section starts here -->
-      <section class="projects-section">
-        <img src="./img/image_geometry_2.svg" alt="Projects section image" />
+      <section class="projects-section" id="projects">
         <h2>Projects</h2>
 
         <div class="projects-container">
@@ -123,7 +139,7 @@
       </section>
 
       <!-- About Section  -->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <h2>About</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -165,8 +181,8 @@
         </div>
       </section>
 
-      <footer id="footer">
-        <div class="contact-form-container">
+      <footer class="contact">
+        <div class="contact-form-container" id="footer">
           <h2>Get started</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -220,7 +236,10 @@
           <ul>
             <li>
               <a href="#">
-                <img src="img/social/ic_stackoverflow.svg" alt="stackoverflow icon" />
+                <img
+                  src="img/social/ic_stackoverflow.svg"
+                  alt="stackoverflow icon"
+                />
               </a>
             </li>
             <li>
@@ -229,16 +248,24 @@
               </a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_twitter.svg" alt="twitter icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_twitter.svg" alt="twitter icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_linkedin.svg" alt="linkedin icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_linkedin.svg" alt="linkedin icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_medium.svg" alt="medium icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_medium.svg" alt="medium icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_angellist.svg" alt="angellist icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_angellist.svg" alt="angellist icon"
+              /></a>
             </li>
           </ul>
         </div>
