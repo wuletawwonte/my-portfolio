@@ -329,3 +329,11 @@ header nav a {
   gap: 10px;
 }
 
+.footer-container > ul {
+  margin-top: 30px;
+  padding: 0 5px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
