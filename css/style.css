@@ -537,8 +537,7 @@ header {
   /* Contact section styling */
   .contact {
     background-color: #f9f9fa;
-    background-image: url("../img/image-geometry_6.svg"),
-      url("../img/image-geometry_7.svg");
+    background-image: url("../img/image-geometry_6.svg"), url("../img/image-geometry_7.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     background-size: 20%, 20%;
