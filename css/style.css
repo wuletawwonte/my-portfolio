@@ -82,6 +82,7 @@ header {
   background-color: transparent;
   color: #1a2236;
   border: solid #1a2236 2px;
+  transition: background-color 0.5s ease-in;
 }
 
 .start-collaboration-btn:hover {
