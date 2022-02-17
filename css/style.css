@@ -179,21 +179,21 @@ header {
   margin-bottom: 35px;
 }
 
-.about-section > h2 {
+.about-section-right > h2 {
   font-size: 50px;
   font-family: "Playfair Display", serif;
   color: #1a2236;
   font-weight: normal;
 }
 
-.about-section > p {
+.about-section-right > p {
   color: #1a2236;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
   font-size: 19px;
 }
 
-.about-section > button {
+.about-section-right > button {
   cursor: pointer;
   margin-top: 32px;
   border: none;
@@ -204,7 +204,7 @@ header {
   font-size: 19px;
 }
 
-.about-section > button > b {
+.about-section-right > button > b {
   font-size: 23px;
   font-weight: 700;
 }
@@ -479,45 +479,17 @@ header {
     transform: rotate(-90deg);
   }
 
-  .project-item {
-    /* height: 270px; */
-    display: flex;
-    flex-direction:column-reverse;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+  .project-item-one {
+    grid-column: span 2;
   }
 
   .project-item > img {
-    display: none;
-  }
-
-  .project-item-one {
-    grid-column: span 2;
-    background: url("../img/projects/Rectangle_21.jpg");
-  }
-  .project-item-two {
-    background: url("../img/projects/Rectangle_22.png");
-  }
-  .project-item-three {
-    background: url("../img/projects/Rectangle_23.png");
-  }
-  .project-item-four {
-    background: url("../img/projects/Rectangle_24.png");
-  }
-  .project-item-five {
-    background: url("../img/projects/Rectangle_25.png");
-  }
-
-  /* .project-description {
-    display: none;
-  } */
-
-  /* .project-item:hover + .project-description {
     display: block;
-  } */
+    float: left;
+  }
 
   .project-description {
+    float: left;
     padding: 5%;
     opacity: 0.98;
   }
@@ -533,6 +505,30 @@ header {
     color: #ffffff;
   }
 
+  /* About section styling */
 
+  .about-section {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 160px;
+    gap: 50px;
+  }
+
+  .my-skill-set {    
+    background: url("../img/image_dots_with_teal.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 0;
+    flex-grow: 1;
+  }
+
+  .about-section-right {
+    padding-right: 160px;
+    padding-top: 100px;
+  }
 
 }
