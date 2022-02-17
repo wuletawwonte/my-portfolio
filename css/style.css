@@ -482,7 +482,36 @@ header {
   .project-item-one {
     grid-column: span 2;
     height: 400px;
+    display: flex;
+    flex-direction:column-reverse;
   }
+
+  .project-item-one > img {
+    display: none;
+  }
+
+  .project-item-one {
+    background: url("../img/projects/Rectangle_21.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .project-item-one > .project-description {
+    padding: 40px;
+    opacity: 0.98;
+  }
+
+  .see-project-btn {
+    background-color: #ffffff;
+    color: #1a2236;
+  }
+
+  .see-project-btn:hover {
+    background-color: #1a2236;
+    color: #ffffff;
+  }
+
 
 
 }
