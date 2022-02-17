@@ -245,9 +245,12 @@ header {
 }
 
 /* Contact form styling starts here */
-.contact-form-container {
+.contact {
   background: #f9f9fa url("../img/section_bg.svg");
   background-repeat: no-repeat;
+}
+
+.contact-form-container {
   padding: 106px 18px 18px 18px;
   display: flex;
   flex-direction: column;
@@ -524,11 +527,49 @@ header {
     grid-template-columns: repeat(2, 50%);
     gap: 0;
     flex-grow: 1;
+    width: 50%;
   }
 
   .about-section-right {
     padding-right: 160px;
     padding-top: 100px;
+    width: 50%;
   }
 
+  /* Contact section styling */
+  .contact {
+    background-color: #F9F9FA;
+    background-image: url("../img/image-geometry_6.svg"), url("../img/image-geometry_7.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 20%, 20%;
+    padding: 80px 28% 155px 28%;
+  }
+
+  .contact h2 {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10% 35px 10%;
+  }
+
+  .footer-container > a {
+    font-size: 14px;
+  }
+
+  .footer-container > ul {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
