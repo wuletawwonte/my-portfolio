@@ -9,8 +9,22 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <nav>
+      <header id="header">
+        <nav class="nav-menu">
+          <ul>
+            <li class="nav-menu-item active-menu">
+              <a href="#header">Hello</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#projects">Portfolio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
           <a href="#"
             ><img
               src="./img/ic_menu.svg"
@@ -21,28 +35,36 @@
       </header>
 
       <!-- Hero section starts here -->
-      <section class="hero-section">
-        <h1>Wuletaw Wonte</h1>
-        <p>
-          Hello! I am a full stack software developer! I can help you build a
-          product, feature or website. Taka a look of my works. If you like what
-          you see and have a project you need coded, don't hesitate and contact
-          me.
-        </p>
-        <button type="button" class="start-collaboration-btn">
-          Start Collaboration
-        </button>
+      <section class="hero-section" id="hero">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Wuletaw Wonte</h1>
+            <p>
+              Hello! I am a full stack software developer! I can help you build
+              a product, feature or website. Taka a look of my works. If you
+              like what you see and have a project you need coded, don't
+              hesitate and contact me.
+            </p>
+            <button type="button" class="start-collaboration-btn">
+              Start Collaboration
+            </button>
+          </div>
+          <div class="hero-right"></div>
+        </div>
+        <img src="./img/image_geometry_2.svg" alt="Projects section image" />
       </section>
 
       <!-- Projects section starts here -->
-      <section class="projects-section">
-        <img src="./img/image_geometry_2.svg" alt="Projects section image" />
-        <h2>Projects</h2>
-
+      <section class="projects-section" id="projects">
         <div class="projects-container">
+          <!-- Projects section main header -->
+          <div class="projects-section-header">
+            <h2>Projects</h2>
+          </div>
+
           <!-- Project one  -->
-          <div class="project-item">
-            <img src="./img/projects/Rectangle_21.png" alt="Project one" />
+          <div class="project-item project-item-one">
+            <img src="./img/projects/Rectangle_21.jpg" alt="Project one" />
             <div class="project-description">
               <h2>Project one</h2>
               <div class="project-actions">
@@ -57,7 +79,7 @@
           </div>
 
           <!-- Project Two -->
-          <div class="project-item">
+          <div class="project-item project-item-two">
             <img src="./img/projects/Rectangle_22.png" alt="Project two" />
             <div class="project-description">
               <h2>Project two</h2>
@@ -73,7 +95,7 @@
           </div>
 
           <!-- Project Three -->
-          <div class="project-item">
+          <div class="project-item project-item-three">
             <img src="./img/projects/Rectangle_23.png" alt="Project three" />
             <div class="project-description">
               <h2>Project three</h2>
@@ -89,7 +111,7 @@
           </div>
 
           <!-- Project Four -->
-          <div class="project-item">
+          <div class="project-item project-item-four">
             <img src="./img/projects/Rectangle_24.png" alt="Project four" />
             <div class="project-description">
               <h2>Project four</h2>
@@ -105,7 +127,7 @@
           </div>
 
           <!-- Project Five -->
-          <div class="project-item">
+          <div class="project-item project-item-five">
             <img src="./img/projects/Rectangle_25.png" alt="Project five" />
             <div class="project-description">
               <h2>Project five</h2>
@@ -123,15 +145,18 @@
       </section>
 
       <!-- About Section  -->
-      <section class="about-section">
-        <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ea eiusmod
-        </p>
-        <button type="button">Get my CV <b>&#8595;</b></button>
+      <section class="about-section" id="about">
+        <div class="about-section-right">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ea eiusmod
+          </p>
+          <button type="button">Get my CV <b>&#8595;</b></button>
+        </div>
+
         <div class="my-skill-set">
           <div class="languages skill-set">
             <h2>Languages</h2>
@@ -165,7 +190,8 @@
         </div>
       </section>
 
-      <footer id="footer">
+      <!-- Contact Section  -->
+      <section class="contact" id="contact">
         <div class="contact-form-container">
           <h2>Get started</h2>
           <p>
@@ -211,6 +237,9 @@
             </button>
           </form>
         </div>
+      </section>
+
+      <footer class="footer">
         <div class="footer-container">
           <a href="#">
             <h2>Get my Resume</h2>
@@ -220,7 +249,10 @@
           <ul>
             <li>
               <a href="#">
-                <img src="img/social/ic_stackoverflow.svg" alt="stackoverflow icon" />
+                <img
+                  src="img/social/ic_stackoverflow.svg"
+                  alt="stackoverflow icon"
+                />
               </a>
             </li>
             <li>
@@ -229,16 +261,24 @@
               </a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_twitter.svg" alt="twitter icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_twitter.svg" alt="twitter icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_linkedin.svg" alt="linkedin icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_linkedin.svg" alt="linkedin icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_medium.svg" alt="medium icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_medium.svg" alt="medium icon"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img src="img/social/ic_angellist.svg" alt="angellist icon" /></a>
+              <a href="#">
+                <img src="img/social/ic_angellist.svg" alt="angellist icon"
+              /></a>
             </li>
           </ul>
         </div>
