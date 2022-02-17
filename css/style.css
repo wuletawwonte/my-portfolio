@@ -479,28 +479,49 @@ header {
     transform: rotate(-90deg);
   }
 
-  .project-item-one {
-    grid-column: span 2;
-    height: 400px;
+  .project-item {
+    /* height: 270px; */
     display: flex;
     flex-direction:column-reverse;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
   }
 
-  .project-item-one > img {
+  .project-item > img {
     display: none;
   }
 
   .project-item-one {
-    background: url("../img/projects/Rectangle_21.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    grid-column: span 2;
+    background: url("../img/projects/Rectangle_21.jpg");
+  }
+  .project-item-two {
+    background: url("../img/projects/Rectangle_22.png");
+  }
+  .project-item-three {
+    background: url("../img/projects/Rectangle_23.png");
+  }
+  .project-item-four {
+    background: url("../img/projects/Rectangle_24.png");
+  }
+  .project-item-five {
+    background: url("../img/projects/Rectangle_25.png");
   }
 
-  .project-item-one > .project-description {
-    padding: 40px;
+  /* .project-description {
+    display: none;
+  } */
+
+  /* .project-item:hover + .project-description {
+    display: block;
+  } */
+
+  .project-description {
+    padding: 5%;
     opacity: 0.98;
   }
+
 
   .see-project-btn {
     background-color: #ffffff;
