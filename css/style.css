@@ -364,7 +364,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 50px;
-    box-shadow: 0px 0.5px 0px 0px #dddfe6;
+    box-shadow: 0 0.5px 0 0 #dddfe6;
   }
 
   .nav-menu > a {
@@ -372,7 +372,6 @@ header {
   }
 
   .nav-menu > ul {
-    display: block;
     list-style: none;
     display: flex;
     gap: 40px;
@@ -498,13 +497,13 @@ header {
   }
 
   .see-project-btn {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #1a2236;
   }
 
   .see-project-btn:hover {
     background-color: #1a2236;
-    color: #ffffff;
+    color: #fff;
   }
 
   /* About section styling */
@@ -557,10 +556,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 35px 10% 35px 10%;
-  }
-
-  .footer-container > a {
-    font-size: 14px;
   }
 
   .footer-container > ul {
