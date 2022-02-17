@@ -99,7 +99,7 @@ header {
   width: 100%;
 }
 
-.projects-section > h2 {
+.projects-section-header > h2 {
   margin-left: 16px;
   margin-top: 40px;
   margin-bottom: 32px;
@@ -450,5 +450,39 @@ header {
   .center-contained-section {
     padding: 50px 160px 200px 8%;
   }
+
+  /* Projects section styling for desktop version */
+
+  .projects-section {
+    margin-top: 150px;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-section-header {
+    background: url("../img/image_dots.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 160px;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+
+  .projects-section-header > h2 {
+    font-size: 60px;
+    margin-top: 6ch;
+    margin-left: 4ch;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+  }
+
+  .project-item-one {
+    grid-column: span 2;
+    height: 400px;
+  }
+
 
 }
