@@ -420,14 +420,14 @@ header {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 138px;
+    background-size: auto 20%;
     width: 50%;
   }  
   
   .hero-right {
     background: url("../img/image-geometry.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
+    background-position: left;
+    background-size: auto 100%;
     width: 50%;
   }
 
@@ -448,7 +448,7 @@ header {
   }
 
   .center-contained-section {
-    padding: 150px 160px 200px 160px;
+    padding: 50px 160px 200px 8%;
   }
 
 }
