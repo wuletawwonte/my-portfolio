@@ -414,7 +414,7 @@ header {
   .hero-content {
     display: flex;
     justify-content: stretch;
-    align-items: stretch;    
+    align-items: stretch;
   }
 
   .hero-left {
@@ -425,8 +425,8 @@ header {
     background-size: 138px;
     background-size: auto 20%;
     width: 50%;
-  }  
-  
+  }
+
   .hero-right {
     background: url("../img/image-geometry.svg");
     background-position: left;
@@ -497,7 +497,6 @@ header {
     opacity: 0.98;
   }
 
-
   .see-project-btn {
     background-color: #ffffff;
     color: #1a2236;
@@ -518,7 +517,7 @@ header {
     gap: 50px;
   }
 
-  .my-skill-set {    
+  .my-skill-set {
     background: url("../img/image_dots_with_teal.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -538,8 +537,9 @@ header {
 
   /* Contact section styling */
   .contact {
-    background-color: #F9F9FA;
-    background-image: url("../img/image-geometry_6.svg"), url("../img/image-geometry_7.svg");
+    background-color: #f9f9fa;
+    background-image: url("../img/image-geometry_6.svg"),
+      url("../img/image-geometry_7.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     background-size: 20%, 20%;
@@ -571,5 +571,4 @@ header {
     justify-content: center;
     align-items: center;
   }
-  
 }
