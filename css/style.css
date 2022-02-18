@@ -346,13 +346,18 @@ header {
   gap: 10px;
 }
 
-.footer-container > ul {
+.social-footer-icons {
   margin-top: 30px;
   padding: 0 5px;
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+
+.social-footer-icons img:hover {
+  transform: scale(1.2);
+}
+
 
 /* RWD styling code  */
 @media screen and (min-width: 992px) {
