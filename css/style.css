@@ -62,7 +62,7 @@ header {
   font-size: 60px;
   line-height: 60px;
   color: #1a2236;
-  animation: scale-up .4s ease-in-out;
+  animation: scale-up 0.4s ease-in-out;
 }
 
 @keyframes scale-up {
