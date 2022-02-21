@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://wuletaw-portfolio.netlify.com)
+[Live Demo Link](https://wuletawwonte.github.io/my-portfolio)
 ![FireShot Capture 080 - Wuletaw Wonte - Portfolio - wuletaw-portfolio netlify app](https://user-images.githubusercontent.com/12524453/154622050-2eb4e3e9-f8fa-4664-9a60-c156c4de694b.png)
 
 
