@@ -183,7 +183,9 @@ header {
 /* Contact section styling */
 .contact {
   background-color: #f9f9fa;
-  background-image: url("../img/image-geometry_6.svg"), url("../img/image-geometry_7.svg");
+  background-image:
+    url("../img/image-geometry_6.svg"),
+    url("../img/image-geometry_7.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 20%, 20%;
@@ -201,12 +203,13 @@ header {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.submit-btn, .message {
+.submit-btn,
+.message {
   margin-top: 0;
   grid-column: span 2;
 }
 
-.message{
+.message {
   resize: none;
   height: 100px;
 }
