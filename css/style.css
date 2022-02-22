@@ -143,7 +143,7 @@ header {
   flex-grow: 0;
 }
 
-.project-description > h2 {
+.project-description > h3 {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
