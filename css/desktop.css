@@ -196,6 +196,16 @@ header {
   line-height: 100px;
 }
 
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.submit-btn, .message {
+  margin-top: 0;
+  grid-column: span 2;
+}
+
 /* Footer Section */
 
 .footer-container {

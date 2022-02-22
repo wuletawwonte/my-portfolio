@@ -224,29 +224,31 @@
             class="contact-form"
           >
             <div class="name-container labeled-element">
-              <label>Your name</label>
+              <label for="name">Your name</label>
               <input
                 required
                 type="text"
                 maxlength="30"
                 name="name"
+                id="name"
                 placeholder="Your name"
               />
             </div>
 
             <div class="email-container labeled-element">
-              <label>Your email</label>
+              <label for="email">Your email</label>
               <input
                 required
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Your email"
               />
             </div>
 
             <textarea
               required
-              class="labeled-element"
+              class="message labeled-element"
               name="message"
               maxlength="500"
               placeholder="Enter your message here..."
