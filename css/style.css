@@ -325,7 +325,6 @@ header {
 .contact-form > textarea {
   padding: 15px 16px;
   border-radius: 4px;
-  resize: vertical;
 }
 
 .contact-form > textarea:focus {

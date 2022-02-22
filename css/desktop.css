@@ -206,6 +206,11 @@ header {
   grid-column: span 2;
 }
 
+.message{
+  resize: none;
+  height: 100px;
+}
+
 /* Footer Section */
 
 .footer-container {
