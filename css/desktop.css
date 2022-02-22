@@ -196,6 +196,8 @@ header {
   line-height: 100px;
 }
 
+/* Footer Section */
+
 .footer-container {
   display: flex;
   justify-content: space-between;

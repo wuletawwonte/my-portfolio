@@ -294,7 +294,7 @@ header {
   background-color: white;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
-  padding: 4px 16px;
+  padding: 10px 16px 4px 16px ;
   display: flex;
   flex-direction: column;
 }
@@ -317,8 +317,8 @@ header {
 }
 
 .labeled-element > label {
-  color: #7d7c84;
-  font-size: 10px;
+  color: black;
+  font-size: 13px;
   line-height: 15px;
 }
 
