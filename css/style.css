@@ -30,7 +30,6 @@ header {
   height: 40px;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
   background-image: url("../img/ic_menu.svg");
   background-size: 20px;
