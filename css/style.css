@@ -33,6 +33,7 @@ header {
   background-size: 100%;
   background-position: center;
   background-image: url("../img/ic_menu.svg");
+  background-size: 20px;
   z-index: 1000;
 }
 
@@ -45,7 +46,7 @@ header {
 }
 
 #menu.active {
-  height: 70vh;
+  height: 100%;
   background-color: #fff;
   background-image: url("../img/image_geometry_menu_1.svg");
   background-repeat: no-repeat;
