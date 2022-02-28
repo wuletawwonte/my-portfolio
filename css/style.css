@@ -41,6 +41,10 @@ header {
 }
 
 #menu {
+  display: none;
+}
+
+#menu.active {
  /* display: none;*/
  height: 70vh;
  background-color: #fff;
