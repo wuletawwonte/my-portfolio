@@ -33,6 +33,7 @@ header {
   background-size: 100%;
   background-position: center;
   background-image: url("../img/ic_menu.svg");
+  z-index: 1000;
 }
 
 #toggle-menu.active {
@@ -40,7 +41,33 @@ header {
 }
 
 #menu {
-  display: none;
+ /* display: none;*/
+ height: 70vh;
+ background-color: #fff;
+ background-image: url("../img/section_bg.svg");
+ background-repeat: no-repeat;
+ background-position: top left;
+ width: 100%;
+ position: absolute;
+ left: 0;
+ top: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 0;
+ gap: 10px;
+}
+
+#menu .nav-menu-item {
+  list-style: none;
+}
+
+.nav-menu-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .hero-section {
