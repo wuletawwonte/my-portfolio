@@ -9,11 +9,11 @@ header {
   box-shadow: 0 0.5px 0 0 #dddfe6;
 }
 
-.nav-menu > a {
+#toggle-menu {
   display: none;
 }
 
-.nav-menu > ul {
+#menu {
   list-style: none;
   display: flex;
   gap: 40px;
