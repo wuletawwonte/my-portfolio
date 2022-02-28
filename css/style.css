@@ -45,22 +45,21 @@ header {
 }
 
 #menu.active {
- /* display: none;*/
- height: 70vh;
- background-color: #fff;
- background-image: url("../img/section_bg.svg");
- background-repeat: no-repeat;
- background-position: top left;
- width: 100%;
- position: absolute;
- left: 0;
- top: 0;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- padding: 0;
- gap: 10px;
+  height: 70vh;
+  background-color: #fff;
+  background-image: url("../img/section_bg.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
 }
 
 #menu .nav-menu-item {
