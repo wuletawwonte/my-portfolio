@@ -48,9 +48,9 @@ header {
 #menu.active {
   height: 100%;
   background-color: #fff;
-  background-image: url("../img/image_geometry_menu_1.svg");
+  background-image: url("../img/menu-bg.svg"), url("../img/few-dots.svg"), url("../img/few-dots.svg");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top left, top 74px right 57px, left 54px bottom 110px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -58,9 +58,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0;
-  gap: 10px;
+  padding-top: 144px;
+  gap: 25px;
 }
 
 #menu .nav-menu-item {
@@ -71,7 +71,6 @@ header {
   text-decoration: none;
   color: #333;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .hero-section {
