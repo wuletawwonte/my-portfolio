@@ -25,19 +25,52 @@ header {
   justify-content: end;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: black;
-  font-weight: 800;
-  font-size: 1.8rem;
+#toggle-menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/ic_menu.svg");
+  background-size: 20px;
+  z-index: 1000;
 }
 
-.nav-menu ul {
+#toggle-menu.active {
+  background-image: url("../img/ic_cross.svg");
+}
+
+#menu {
   display: none;
 }
 
-.ic_menu {
-  width: 30px;
+#menu.active {
+  height: 100%;
+  background-color: #fff;
+  background-image: url("../img/menu-bg.svg"), url("../img/few-dots.svg"), url("../img/menu-bottom-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top left, top 74px right 57px, left bottom;
+  background-size: auto, auto, contain;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 144px;
+}
+
+#menu .nav-menu-item {
+  list-style: none;
+}
+
+.nav-menu-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  line-height: 48px;
 }
 
 .hero-section {
