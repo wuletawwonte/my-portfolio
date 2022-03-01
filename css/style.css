@@ -413,6 +413,7 @@ header {
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
+  gap: 18px;
 }
 
 .modal-close-btn {
@@ -422,9 +423,36 @@ header {
   font-size: 30px;
 }
 
+.project-details-container h2 {
+  color: #1A2236;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-technologies {
+  display: flex;
+  gap: 10px;
+  float: left;
+  padding: 0;
+}
+
+.single-technology {
+  list-style: none;
+  border: 0.516px solid #1A2236;
+  padding: 0 10px;
+}
+
+.single-technology a {
+  text-decoration: none;
+  font-size: 10.3px;
+  color: #1A2236;
+}
+
 
 .caroussel {
   width: 100%;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 
 .caroussel img {
