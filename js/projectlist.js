@@ -61,8 +61,8 @@ const renderedProjects = projects
                 </button>
               </div>
             </div>
-          `
-          ).join('');
+          `,
+  ).join('');
 
 projectContainer.innerHTML += renderedProjects;
 
