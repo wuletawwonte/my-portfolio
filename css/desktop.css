@@ -28,7 +28,7 @@ header {
 }
 
 .nav-menu-item a::after {
-  content: "";
+  content: '';
   background: #1a2236;
   display: block;
   position: sticky;
@@ -39,7 +39,7 @@ header {
 .active-menu a::after,
 .nav-menu-item:hover a::after,
 .nav-menu-item:active a::after {
-  content: "";
+  content: '';
   background: #1a2236;
   display: block;
   position: sticky;
@@ -60,7 +60,7 @@ header {
 
 .hero-left {
   padding: 10% 20px 200px 8%;
-  background: url("../img/image_dots.svg");
+  background: url('../img/image_dots.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 138px;
@@ -69,7 +69,7 @@ header {
 }
 
 .hero-right {
-  background: url("../img/image-geometry.svg");
+  background: url('../img/image-geometry.svg');
   background-position: left;
   background-size: auto 100%;
   width: 50%;
@@ -111,7 +111,7 @@ header {
 }
 
 .projects-section-header {
-  background: url("../img/image_dots.svg");
+  background: url('../img/image_dots.svg');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 160px;
@@ -163,7 +163,7 @@ header {
 }
 
 .my-skill-set {
-  background: url("../img/image_dots_with_teal.svg");
+  background: url('../img/image_dots_with_teal.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 200px;
@@ -183,9 +183,8 @@ header {
 /* Contact section styling */
 .contact {
   background-color: #f9f9fa;
-  background-image:
-    url("../img/image-geometry_6.svg"),
-    url("../img/image-geometry_7.svg");
+  background-image: url('../img/image-geometry_6.svg'),
+    url('../img/image-geometry_7.svg');
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 20%, 20%;
@@ -233,7 +232,7 @@ header {
 }
 
 .project-detail {
-  background: #1A2236F2;
+  background: #1a2236f2;
 }
 
 .project-details-container {
@@ -253,7 +252,14 @@ header {
 
 .caroussel {
   overflow: visible;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 5.21%, rgba(0, 0, 0, 0) 92.16%, rgba(0, 0, 0, 0.15) 100%), url(image.png);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0) 5.21%,
+      rgba(0, 0, 0, 0) 92.16%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(image.png);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -285,12 +291,11 @@ header {
   gap: 800px;
 }
 
- .arrows {
-   text-decoration: none;
-   color: #1A2236;
-   font-size: 18px;
+.arrows {
+  text-decoration: none;
+  color: #1a2236;
+  font-size: 18px;
 }
 .next {
   float: right;
 }
-
