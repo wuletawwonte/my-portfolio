@@ -403,24 +403,28 @@ header {
 
 /* Project details popup styling*/
 
+.project-detail {
+  position: absolute;
+}
+
 .project-details-container {
   background-color: #fff;
-  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  z-index: 1010;
 }
 
 .modal-close-btn {
   align-self: flex-end;
   background-color: #fff;
   border: none;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .project-details-container h2 {
@@ -458,3 +462,26 @@ header {
 .caroussel img {
   width: 100%;
 }
+
+.project-details a {
+  border: 1px solid #1A2236;
+  color: #1a2236;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.project-details a img {
+  color: #1a2236;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  width: 60%;
+  margin-top: 29px;
+  text-align: center;
+}
+
