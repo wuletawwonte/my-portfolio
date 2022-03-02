@@ -60,8 +60,7 @@ const renderedProjects = projects
                 </button>
               </div>
             </div>
-          `
-  ).join('');
+          `).join('');
 
 projectContainer.innerHTML += renderedProjects;
 
@@ -70,8 +69,7 @@ const popupContent = (project) => `
         <button class="modal-close-btn" onclick="hidePopup()">&times;</button>
         <h2>${project.name}</h2>
         <ul class="modal-technologies">
-          ${project.technologies
-            .map((technology) => `
+          ${project.technologies.map((technology) => `
                 <li class="single-technology">
                   <a href="#">${technology}</a>
                 </li>`).join('')}
@@ -108,11 +106,7 @@ const popupContent = (project) => `
 /* eslint-disable no-unused-vars */
 
 const showPopup = (pid) => {
-  const popupProject = projects.find((item) => {
-    if (pid === item.id) {
-      return item;
-    }
-  });
+  const popupProject = projects.find((item) => pid === item.id);
   popupContainer.innerHTML = popupContent(popupProject);
   wrapper.classList.add('hidden');
   window.scrollTo(0, 0);
