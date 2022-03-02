@@ -46,7 +46,8 @@ const popupContainer = document.getElementById('project-detail');
 const wrapper = document.querySelector('.wrapper');
 
 const renderedProjects = projects
-  .map((element) => `<div class="project-item" id=${element.id}>
+  .map(
+    (element) => `<div class="project-item" id=${element.id}>
               <img src="./img/projects/${element.featured_image}" alt="${element.name}" />
               <div class="project-description">
                 <h3>${element.name}</h3>
@@ -60,7 +61,8 @@ const renderedProjects = projects
                 </button>
               </div>
             </div>
-          `).join('');
+          `
+  ).join('');
 
 projectContainer.innerHTML += renderedProjects;
 
@@ -69,10 +71,13 @@ const popupContent = (project) => `
         <button class="modal-close-btn" onclick="hidePopup()">&times;</button>
         <h2>${project.name}</h2>
         <ul class="modal-technologies">
-          ${project.technologies.map((technology) => `
+          ${project.technologies
+            .map(
+              (technology) => `
                 <li class="single-technology">
                   <a href="#">${technology}</a>
-                </li>`).join('')}
+                </li>`
+            ).join('')}
         </ul>
         <div class="caroussel">
           <img src="img/projects/${project.featured_image}" />
@@ -106,7 +111,11 @@ const popupContent = (project) => `
 /* eslint-disable no-unused-vars */
 
 const showPopup = (pid) => {
-  const popupProject = projects.find((item) => { return item.id === pid; });
+  const popupProject = projects.find((item) => {
+    if (Number(pid) === Number(item.id)) {
+      return item;
+    }
+  });
   popupContainer.innerHTML = popupContent(popupProject);
   wrapper.classList.add('hidden');
   window.scrollTo(0, 0);
