@@ -51,7 +51,8 @@ header {
 #menu.active {
   height: 100%;
   background-color: #fff;
-  background-image: url("../img/menu-bg.svg"), url("../img/few-dots.svg"), url("../img/menu-bottom-bg.svg");
+  background-image: url("../img/menu-bg.svg"), url("../img/few-dots.svg"),
+    url("../img/menu-bottom-bg.svg");
   background-repeat: no-repeat;
   background-position: top left, top 74px right 57px, left bottom;
   background-size: auto, auto, contain;
@@ -408,14 +409,14 @@ header {
 
 #project-detail {
   visibility: visible;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
-  height: max-content;
 }
 
 .project-details-container {
+  overflow-y: visible;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -436,7 +437,7 @@ header {
 }
 
 .project-details-container h2 {
-  color: #1A2236;
+  color: #1a2236;
   font-size: 20px;
   font-weight: bold;
 }
@@ -450,16 +451,15 @@ header {
 
 .single-technology {
   list-style: none;
-  border: 0.516px solid #1A2236;
+  border: 0.516px solid #1a2236;
   padding: 0 10px;
 }
 
 .single-technology a {
   text-decoration: none;
   font-size: 10.3px;
-  color: #1A2236;
+  color: #1a2236;
 }
-
 
 .caroussel {
   width: 100%;
@@ -472,7 +472,7 @@ header {
 }
 
 .project-details a {
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   color: #1a2236;
   text-decoration: none;
   font-size: 18px;
@@ -495,11 +495,9 @@ header {
 
 .project-buttons > a {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .next-previous {
   display: none;
 }
-
-
