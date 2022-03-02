@@ -53,6 +53,7 @@ const showPopup = (pid) => {
   window.scrollTo(0, 0);
 };
 
+
 const projectContainer = document.getElementById('projects-container');
 const popupContainer = document.getElementById('project-detail');
 const wrapper = document.querySelector('.wrapper');
