@@ -400,3 +400,89 @@ header {
 .social-footer-icons img:hover {
   transform: scale(1.2);
 }
+
+/* Project details popup styling*/
+
+.project-detail {
+  position: absolute;
+  top: 0;
+}
+
+.project-details-container {
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100vh;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1010;
+}
+
+.modal-close-btn {
+  align-self: flex-end;
+  background-color: #fff;
+  border: none;
+  font-size: 35px;
+}
+
+.project-details-container h2 {
+  color: #1A2236;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-technologies {
+  display: flex;
+  gap: 10px;
+  float: left;
+  padding: 0;
+}
+
+.single-technology {
+  list-style: none;
+  border: 0.516px solid #1A2236;
+  padding: 0 10px;
+}
+
+.single-technology a {
+  text-decoration: none;
+  font-size: 10.3px;
+  color: #1A2236;
+}
+
+
+.caroussel {
+  width: 100%;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.caroussel img {
+  width: 100%;
+}
+
+.project-details a {
+  border: 1px solid #1A2236;
+  color: #1a2236;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.project-details a img {
+  color: #1a2236;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  width: 60%;
+  margin-top: 29px;
+  text-align: center;
+}
+

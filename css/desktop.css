@@ -231,3 +231,66 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+.project-detail {
+  background: #1A2236F2;
+}
+
+.project-details-container {
+  margin: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: max-content;
+}
+
+.project-details-container h2 {
+  font-size: 60px;
+}
+
+.single-technology a {
+  font-size: 20px;
+}
+
+.caroussel {
+  overflow: visible;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 5.21%, rgba(0, 0, 0, 0) 92.16%, rgba(0, 0, 0, 0.15) 100%), url(image.png);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-details {
+  margin-right: 236px;
+  margin-left: 236px;
+  margin-top: 30px;
+}
+
+.project-buttons {
+  flex-direction: row;
+  display: flex;
+  gap: 37px;
+  margin-top: 29px;
+  justify-content: center;
+  width: inherit;
+}
+
+.project-details a:hover {
+  background: #1a2236;
+  color: #fff;
+}
+
+.next-previous {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 800px;
+}
+
+ .arrows {
+   text-decoration: none;
+   color: #1A2236;
+   font-size: 18px;
+}
+.next {
+  float: right;
+}
+
