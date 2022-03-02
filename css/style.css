@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap');
 
 * {
   margin: 0;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body.hide-overflow {
@@ -18,8 +18,12 @@ body.hide-overflow {
   flex-direction: column;
 }
 
+.wrapper.hidden {
+  display: none;
+}
+
 header {
-  background-image: url("../img/section_bg.svg");
+  background-image: url('../img/section_bg.svg');
   background-repeat: no-repeat;
 }
 
@@ -35,13 +39,13 @@ header {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/ic_menu.svg");
+  background-image: url('../img/ic_menu.svg');
   background-size: 20px;
-  z-index: 1000;
+  z-index: 300;
 }
 
 #toggle-menu.active {
-  background-image: url("../img/ic_cross.svg");
+  background-image: url('../img/ic_cross.svg');
 }
 
 #menu {
@@ -51,7 +55,7 @@ header {
 #menu.active {
   height: 100%;
   background-color: #fff;
-  background-image: url("../img/menu-bg.svg"), url("../img/few-dots.svg"), url("../img/menu-bottom-bg.svg");
+  background-image: url('../img/menu-bg.svg'), url('../img/few-dots.svg'), url('../img/menu-bottom-bg.svg');
   background-repeat: no-repeat;
   background-position: top left, top 74px right 57px, left bottom;
   background-size: auto, auto, contain;
@@ -94,12 +98,11 @@ header {
 
 .hero-left h1 {
   width: 7ch;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
   color: #1a2236;
-  animation: scale-up 0.4s ease-in-out;
 }
 
 @keyframes scale-up {
@@ -114,7 +117,7 @@ header {
 
 .hero-left p {
   padding: 20px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #1a2236;
   line-height: 21px;
   font-weight: 400;
@@ -125,7 +128,7 @@ header {
   cursor: pointer;
   height: 60px;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   background-color: transparent;
   color: #1a2236;
@@ -152,7 +155,7 @@ header {
   margin-top: 40px;
   margin-bottom: 32px;
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #1a2236;
   font-weight: normal;
 }
@@ -182,7 +185,7 @@ header {
 
 .project-description > h3 {
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 300;
   line-height: 16px;
@@ -200,7 +203,7 @@ header {
   border: none;
   height: 30px;
   padding: 0 6px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
@@ -229,14 +232,14 @@ header {
 
 .about-section-right > h2 {
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #1a2236;
   font-weight: normal;
 }
 
 .about-section-right > p {
   color: #1a2236;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-top: 20px;
   font-size: 19px;
 }
@@ -266,27 +269,27 @@ header {
 .skill-set {
   padding: 50px;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .languages {
-  background-image: url("../img/languages-bg.png");
+  background-image: url('../img/languages-bg.png');
   background-color: #1c528a;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .frameworks {
-  background-image: url("../img/frameworks-bg.png");
+  background-image: url('../img/frameworks-bg.png');
   background-color: #e2505c;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .skills {
-  background-image: url("../img/skills-bg.png");
+  background-image: url('../img/skills-bg.png');
   background-color: #febf52;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -294,7 +297,7 @@ header {
 
 /* Contact form styling starts here */
 .contact {
-  background: #f9f9fa url("../img/section_bg.svg");
+  background: #f9f9fa url('../img/section_bg.svg');
   background-repeat: no-repeat;
 }
 
@@ -306,7 +309,7 @@ header {
 
 .contact-form-container > h2 {
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #1a2236;
   font-weight: normal;
 }
@@ -401,6 +404,114 @@ header {
   justify-content: space-between;
 }
 
+.caroussel img {
+  width: 100%;
+}
+
+.project-details a img {
+  color: #1a2236;
+}
+
 .social-footer-icons img:hover {
   transform: scale(1.2);
+}
+
+/* Project details popup styling */
+
+#project-detail {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.project-details-container {
+  overflow-y: visible;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-close-btn {
+  align-self: flex-end;
+  background-color: #fff;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.project-details-container h2 {
+  color: #1a2236;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-technologies {
+  display: flex;
+  gap: 10px;
+  float: left;
+  padding: 0;
+}
+
+.single-technology {
+  list-style: none;
+  border: 0.516px solid #1a2236;
+  padding: 0 10px;
+}
+
+.single-technology a {
+  text-decoration: none;
+  font-size: 10.3px;
+  color: #1a2236;
+}
+
+.caroussel {
+  width: 100%;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.project-details a {
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  margin-top: 29px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.project-buttons > a {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.project-buttons > a:hover {
+  background-color: #1a2236;
+  color: white;
+}
+
+.project-buttons > a:hover .black-icon {
+  display: none;
+}
+
+.next-previous {
+  display: none;
 }

@@ -19,6 +19,10 @@ header {
   gap: 40px;
 }
 
+.single-technology a {
+  font-size: 20px;
+}
+
 .nav-menu ul a {
   font-size: 16px;
   font-weight: 400;
@@ -28,7 +32,7 @@ header {
 }
 
 .nav-menu-item a::after {
-  content: "";
+  content: '';
   background: #1a2236;
   display: block;
   position: sticky;
@@ -39,7 +43,7 @@ header {
 .active-menu a::after,
 .nav-menu-item:hover a::after,
 .nav-menu-item:active a::after {
-  content: "";
+  content: '';
   background: #1a2236;
   display: block;
   position: sticky;
@@ -60,7 +64,7 @@ header {
 
 .hero-left {
   padding: 10% 20px 200px 8%;
-  background: url("../img/image_dots.svg");
+  background: url('../img/image_dots.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 138px;
@@ -69,7 +73,7 @@ header {
 }
 
 .hero-right {
-  background: url("../img/image-geometry.svg");
+  background: url('../img/image-geometry.svg');
   background-position: left;
   background-size: auto 100%;
   width: 50%;
@@ -110,8 +114,12 @@ header {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.project-item:nth-child(2) {
+  grid-column: span 2;
+}
+
 .projects-section-header {
-  background: url("../img/image_dots.svg");
+  background: url('../img/image_dots.svg');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 160px;
@@ -125,10 +133,6 @@ header {
   margin-left: 4ch;
   transform-origin: top left;
   transform: rotate(-90deg);
-}
-
-.project-item-one {
-  grid-column: span 2;
 }
 
 .project-item > img {
@@ -163,7 +167,7 @@ header {
 }
 
 .my-skill-set {
-  background: url("../img/image_dots_with_teal.svg");
+  background: url('../img/image_dots_with_teal.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 200px;
@@ -183,9 +187,7 @@ header {
 /* Contact section styling */
 .contact {
   background-color: #f9f9fa;
-  background-image:
-    url("../img/image-geometry_6.svg"),
-    url("../img/image-geometry_7.svg");
+  background-image: url('../img/image-geometry_6.svg'), url('../img/image-geometry_7.svg');
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 20%, 20%;
@@ -230,4 +232,81 @@ header {
   list-style: none;
   justify-content: center;
   align-items: center;
+}
+
+.project-detail {
+  background: #1a2236f2;
+}
+
+.project-details-container {
+  margin: 70px;
+  height: max-content;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-details-container h2 {
+  font-size: 60px;
+}
+
+.caroussel {
+  overflow: visible;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 5.21%, rgba(0, 0, 0, 0) 92.16%, rgba(0, 0, 0, 0.15) 100%), url(image.png);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-details {
+  margin-right: 236px;
+  margin-left: 236px;
+  margin-top: 30px;
+}
+
+.project-buttons {
+  flex-direction: row;
+  display: flex;
+  gap: 37px;
+  margin-top: 29px;
+  justify-content: center;
+  width: inherit;
+}
+
+.project-details a:hover {
+  background: #1a2236;
+  color: #fff;
+}
+
+.next-previous {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 800px;
+}
+
+.arrows {
+  text-decoration: none;
+  color: #1a2236;
+  font-size: 18px;
+}
+
+.next {
+  float: right;
+}
+
+/* Project modal styling */
+
+#project-detail {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  max-width: 100%;
+  background: #1a2236f2;
 }
