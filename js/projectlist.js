@@ -61,8 +61,7 @@ const renderedProjects = projects
                 </button>
               </div>
             </div>
-          `
-  ).join('');
+          `).join('');
 
 projectContainer.innerHTML += renderedProjects;
 
@@ -72,8 +71,7 @@ const popupContent = (project) => `
         <h2>${project.name}</h2>
         <ul class="modal-technologies">
           ${project.technologies
-            .map(
-              (technology) => `
+            .map((technology) => `
                 <li class="single-technology">
                   <a href="#">${technology}</a>
                 </li>`
@@ -115,6 +113,7 @@ const showPopup = (pid) => {
     if (Number(pid) === Number(item.id)) {
       return item;
     }
+    return undefined;
   });
   popupContainer.innerHTML = popupContent(popupProject);
   wrapper.classList.add('hidden');
