@@ -41,9 +41,48 @@ const projects = [
   },
 ];
 
-const projectContainer = document.getElementById('projectsContainer');
+
+const showPopup = (pid) => {
+  const popupProject = projects.find((item) => {
+    if (pid == item.id) {
+      return item;
+    }
+  });
+  popupContainer.innerHTML = popupContent(popupProject);
+  wrapper.classList.add('hidden');
+  window.scrollTo(0, 0);
+};
+
+const projectContainer = document.getElementById('projects-container');
 const popupContainer = document.getElementById('project-detail');
 const wrapper = document.querySelector('.wrapper');
+
+function hidePopup() {
+  popupContainer.innerHTML = '';
+  wrapper.classList.remove('hidden');
+}
+
+const renderedProjects = projects
+  .map((element) => {
+    return `<div class="project-item" id=${element.id}>
+              <img src="./img/projects/${element.featured_image}" alt="${element.name}" />
+              <div class="project-description">
+                <h3>${element.name}</h3>
+                <div class="project-actions">
+                  <button type="button">HTML/CSS</button>
+                  <button type="button">Ruby on Rails</button>
+                  <button type="button">Javascript</button>
+                </div>
+                <button type="button" id="${element.name}" onclick="showPopup('${element.id}')" class="see-project-btn">
+                  See this project &#10132;
+                </button>
+              </div>
+            </div>
+          `;
+  })
+  .join('');
+
+projectContainer.innerHTML += renderedProjects;
 
 const popupContent = (project) => {
   return `
@@ -86,42 +125,3 @@ const popupContent = (project) => {
       </div>
     `;
 };
-
-const showPopup = (pid) => {
-  const popupProject = projects.find((item) => {
-    if (pid === item.id) {
-      return item;
-    }
-    return false;
-  });
-  popupContainer.innerHTML = popupContent(popupProject);
-  wrapper.classList.add('hidden');
-  window.scrollTo(0, 0);
-};
-
-function hidePopup() {
-  popupContainer.innerHTML = '';
-  wrapper.classList.remove('hidden');
-}
-
-const renderedProjects = projects
-  .map((element) => {
-    return `<div class="project-item project-item-one" id=${element.id}>
-              <img src="./img/projects/${element.featured_image}" alt="${element.name}" />
-              <div class="project-description">
-                <h3>${element.name}</h3>
-                <div class="project-actions">
-                  <button type="button">HTML/CSS</button>
-                  <button type="button">Ruby on Rails</button>
-                  <button type="button">Javascript</button>
-                </div>
-                <button type="button" id="${element.name}" onclick="showPopup('${element.id}')" class="see-project-btn">
-                  See this project &#10132;
-                </button>
-              </div>
-            </div>
-          `;
-  })
-  .join('');
-
-projectContainer.innerHTML = renderedProjects;

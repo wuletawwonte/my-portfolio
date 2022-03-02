@@ -493,11 +493,18 @@ header {
   padding: 0 30px;
 }
 
+
 .project-buttons > a {
   display: flex;
   justify-content: space-between;
+  width: 200px;
+  flex-shrink: 0;
 }
 
+.project-buttons > a:hover {
+  background-color: #1a2236;
+  color: white;
+}
 .next-previous {
   display: none;
 }
