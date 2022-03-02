@@ -238,8 +238,9 @@ header {
 
 .project-details-container {
   margin: 70px;
-    width: 90%;
-    height: max-content;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: max-content;
 }
 
 .project-details-container h2 {
@@ -252,6 +253,8 @@ header {
 
 .caroussel {
   overflow: visible;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 5.21%, rgba(0, 0, 0, 0) 92.16%, rgba(0, 0, 0, 0.15) 100%), url(image.png);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-details {

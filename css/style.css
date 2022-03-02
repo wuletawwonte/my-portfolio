@@ -405,6 +405,7 @@ header {
 
 .project-detail {
   position: absolute;
+  top: 0;
 }
 
 .project-details-container {
