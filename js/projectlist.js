@@ -41,27 +41,9 @@ const projects = [
   },
 ];
 
-
-const showPopup = (pid) => {
-  const popupProject = projects.find((item) => {
-    if (pid == item.id) {
-      return item;
-    }
-  });
-  popupContainer.innerHTML = popupContent(popupProject);
-  wrapper.classList.add('hidden');
-  window.scrollTo(0, 0);
-};
-
-
 const projectContainer = document.getElementById('projects-container');
 const popupContainer = document.getElementById('project-detail');
 const wrapper = document.querySelector('.wrapper');
-
-function hidePopup() {
-  popupContainer.innerHTML = '';
-  wrapper.classList.remove('hidden');
-}
 
 const renderedProjects = projects
   .map((element) => {
@@ -108,11 +90,15 @@ const popupContent = (project) => {
           <p>${project.description}</p>
           <div class="project-buttons">
             <a href="${project.live_link}"
-              ><span>See live</span><img src="img/ic_link.svg"
-            /></a>
+              ><span>See live</span>
+              <img class="white-icon" src="img/Union.svg"/>
+              <img class="black-icon" src="img/ic_link.svg"/>
+            </a>
             <a href="${project.source_link}"
-              ><span>See source</span><img src="img/ic_github_white.svg"
-            /></a>
+              ><span>See source</span>
+              <img class="white-icon" src="img/ic_github.svg"/>
+              <img class="black-icon" src="img/ic_github_white.svg"/>
+            </a>
           </div>
         </div>
         <div class="next-previous">
@@ -126,3 +112,23 @@ const popupContent = (project) => {
       </div>
     `;
 };
+
+/* eslint-disable no-unused-vars */
+
+const showPopup = (pid) => {
+  const popupProject = projects.find((item) => {
+    if (pid == item.id) {
+      return item;
+    }
+  });
+  popupContainer.innerHTML = popupContent(popupProject);
+  wrapper.classList.add('hidden');
+  window.scrollTo(0, 0);
+};
+
+function hidePopup() {
+  popupContainer.innerHTML = '';
+  wrapper.classList.remove('hidden');
+}
+
+/* eslint-enable no-unused-vars */

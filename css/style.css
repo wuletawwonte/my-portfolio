@@ -504,6 +504,10 @@ header {
   color: white;
 }
 
+.project-buttons > a:hover .black-icon {
+  display: none;
+}
+
 .next-previous {
   display: none;
 }
