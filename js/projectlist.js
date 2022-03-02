@@ -5,6 +5,8 @@ const showPopup = (pid) => {
     }
   });
   popupContainer.innerHTML = popupContent(popupProject);
+  wrapper.classList.add('hidden');
+  window.scrollTo(0,0);
 };
 
 const projects = [
@@ -52,9 +54,11 @@ const projects = [
 
 const projectContainer = document.getElementById("projectsContainer");
 const popupContainer = document.getElementById("project-detail");
+const wrapper = document.querySelector('.wrapper');
 
 function hidePopup() {
   popupContainer.innerHTML = "";
+  wrapper.classList.remove('hidden');
 }
 
 const renderedProjects = projects

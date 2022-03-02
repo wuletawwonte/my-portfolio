@@ -14,6 +14,10 @@ html {
   flex-direction: column;
 }
 
+.wrapper.hidden {
+  display: none;
+}
+
 header {
   background-image: url("../img/section_bg.svg");
   background-repeat: no-repeat;
@@ -95,7 +99,6 @@ header {
   font-size: 60px;
   line-height: 60px;
   color: #1a2236;
-  animation: scale-up 0.4s ease-in-out;
 }
 
 @keyframes scale-up {
@@ -404,10 +407,12 @@ header {
 /* Project details popup styling*/
 
 #project-detail {
-  position: absolute;
+  visibility: visible;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  height: max-content;
 }
 
 .project-details-container {
@@ -416,7 +421,7 @@ header {
   left: 0;
   max-width: 100vw;
   min-height: 100vh;
-  padding: 18px 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 18px;
