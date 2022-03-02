@@ -61,7 +61,8 @@ const renderedProjects = projects
                 </button>
               </div>
             </div>
-          `).join('');
+          `
+          ).join('');
 
 projectContainer.innerHTML += renderedProjects;
 
@@ -70,12 +71,10 @@ const popupContent = (project) => `
         <button class="modal-close-btn" onclick="hidePopup()">&times;</button>
         <h2>${project.name}</h2>
         <ul class="modal-technologies">
-          ${project.technologies
-            .map((technology) => `
+          ${project.technologies.map((technology) => `
                 <li class="single-technology">
                   <a href="#">${technology}</a>
-                </li>`
-            ).join('')}
+                </li>`).join('')}
         </ul>
         <div class="caroussel">
           <img src="img/projects/${project.featured_image}" />
