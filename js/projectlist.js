@@ -51,7 +51,11 @@ const projects = [
 ];
 
 const projectContainer = document.getElementById("projectsContainer");
-const popupContainer = document.querySelector(".project-detail");
+const popupContainer = document.getElementById("project-detail");
+
+function hidePopup() {
+  popupContainer.innerHTML = "";
+}
 
 const renderedProjects = projects
   .map((element) => {
@@ -78,7 +82,7 @@ projectContainer.innerHTML = renderedProjects;
 const popupContent = (project) => {
   return `
         <div class="project-details-container" id="${project.id}">
-        <button class="modal-close-btn">&times;</button>
+        <button class="modal-close-btn" onclick="hidePopup()">&times;</button>
         <h2>${project.name}</h2>
         <ul class="modal-technologies">
           ${project.technologies.map((technology) => {
@@ -87,7 +91,7 @@ const popupContent = (project) => {
                   <a href="#">${technology}</a>
                 </li>
             `;
-          })}
+          }).join('')}
         </ul>
         <div class="caroussel">
           <img src="img/projects/${project.featured_image}" />
