@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const projectContainer = document.getElementById('projectsContainer');
+  const popupContainer = document.querySelector('.project-detail');
 
   const renderedProjects = projects.map((element)=> {
     return `<div class="project-item project-item-one">
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <button type="button">Ruby on Rails</button>
                   <button type="button">Javascript</button>
                 </div>
-                <button type="button" class="see-project-btn">
+                <button type="button" onclik="showModal(${element})" class="see-project-btn">
                   See this project &#10132;
                 </button>
               </div>
@@ -54,7 +55,51 @@ document.addEventListener("DOMContentLoaded", () => {
           `;
   }).join('');
 
+  const showModal = (project) => {
+    
+  }
+
   projectContainer.innerHTML = renderedProjects;
+
+  const popupContent = (project) => {
+    return `
+        <div class="project-details-container">
+        <button class="modal-close-btn">&times;</button>
+        <h2>${project.name}</h2>
+        <ul class="modal-technologies">
+          ${project.technologies.foreach(technology => {
+            return `
+                <li class="single-technology">
+                  <a href="#">${technology}</a>
+                </li>
+            `;
+          })}
+        </ul>
+        <div class="caroussel">
+          <img src="img/projects/${project.featured_image}" />
+        </div>
+        <div class="project-details">
+          <p>${project.description}</p>
+          <div class="project-buttons">
+            <a href="${project.live_link}"
+              ><span>See live</span><img src="img/Union.svg"
+            /></a>
+            <a href="${project.source_link}"
+              ><span>See source</span><img src="img/social/ic_github.svg"
+            /></a>
+          </div>
+        </div>
+        <div class="next-previous">
+          <a href="#" class="previous arrows"
+            ><img src="" /><span>Previous project</span></a
+          >
+          <a href="#" class="next arrows"
+            ><span>Next project</span><img src=""
+          /></a>
+        </div>
+      </div>
+    `;
+  };
 
 
 });
