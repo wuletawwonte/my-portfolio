@@ -106,7 +106,7 @@ const popupContent = (project) => `
 /* eslint-disable no-unused-vars */
 
 const showPopup = (pid) => {
-  const popupProject = projects.find((item) => pid === item.id? item: undefined);
+  const popupProject = projects.find((item) => { return item.id === pid; });
   popupContainer.innerHTML = popupContent(popupProject);
   wrapper.classList.add('hidden');
   window.scrollTo(0, 0);
