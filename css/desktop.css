@@ -187,8 +187,7 @@ header {
 /* Contact section styling */
 .contact {
   background-color: #f9f9fa;
-  background-image: url('../img/image-geometry_6.svg'),
-    url('../img/image-geometry_7.svg');
+  background-image: url('../img/image-geometry_6.svg'), url('../img/image-geometry_7.svg');
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 20%, 20%;
@@ -241,9 +240,15 @@ header {
 
 .project-details-container {
   margin: 70px;
-  padding-left: 60px;
-  padding-right: 60px;
   height: max-content;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .project-details-container h2 {
@@ -252,14 +257,14 @@ header {
 
 .caroussel {
   overflow: visible;
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.15) 0%,
-      rgba(0, 0, 0, 0) 5.21%,
-      rgba(0, 0, 0, 0) 92.16%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    url(image.png);
+  background: 
+  linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 5.21%,
+    rgba(0, 0, 0, 0) 92.16%,
+    rgba(0, 0, 0, 0.15) 100%
+  ), url(image.png);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -296,6 +301,7 @@ header {
   color: #1a2236;
   font-size: 18px;
 }
+
 .next {
   float: right;
 }
@@ -310,15 +316,4 @@ header {
   z-index: 1000;
   max-width: 100%;
   background: #1a2236f2;
-}
-
-.project-details-container {
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  min-height: 100vh;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
