@@ -51,8 +51,7 @@ header {
 #menu.active {
   height: 100%;
   background-color: #fff;
-  background-image: url('../img/menu-bg.svg'), url('../img/few-dots.svg'),
-    url('../img/menu-bottom-bg.svg');
+  background-image: url('../img/menu-bg.svg'), url('../img/few-dots.svg'), url('../img/menu-bottom-bg.svg');
   background-repeat: no-repeat;
   background-position: top left, top 74px right 57px, left bottom;
   background-size: auto, auto, contain;
@@ -401,6 +400,14 @@ header {
   justify-content: space-between;
 }
 
+.caroussel img {
+  width: 100%;
+}
+
+.project-details a img {
+  color: #1a2236;
+}
+
 .social-footer-icons img:hover {
   transform: scale(1.2);
 }
@@ -467,10 +474,6 @@ header {
   overflow: hidden;
 }
 
-.caroussel img {
-  width: 100%;
-}
-
 .project-details a {
   border: 1px solid #1a2236;
   color: #1a2236;
@@ -478,10 +481,6 @@ header {
   font-size: 18px;
   font-weight: 500;
   padding: 10px;
-}
-
-.project-details a img {
-  color: #1a2236;
 }
 
 .project-buttons {
@@ -492,7 +491,6 @@ header {
   text-align: center;
   padding: 0 30px;
 }
-
 
 .project-buttons > a {
   display: flex;
@@ -505,6 +503,7 @@ header {
   background-color: #1a2236;
   color: white;
 }
+
 .next-previous {
   display: none;
 }
