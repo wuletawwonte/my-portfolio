@@ -257,14 +257,7 @@ header {
 
 .caroussel {
   overflow: visible;
-  background: 
-  linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0) 5.21%,
-    rgba(0, 0, 0, 0) 92.16%,
-    rgba(0, 0, 0, 0.15) 100%
-  ), url(image.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 5.21%, rgba(0, 0, 0, 0) 92.16%, rgba(0, 0, 0, 0.15) 100%), url(image.png);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
