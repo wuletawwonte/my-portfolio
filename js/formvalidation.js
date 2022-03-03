@@ -2,7 +2,7 @@ const contactForm = document.querySelector('.contact-form');
 const emailContainer = document.querySelector('.email-container');
 const emailInput = document.getElementById('email');
 const errorMessageContainer = document.querySelector('.error-message');
-const emailErrorMessage = "Please enter email address in small letters."; 
+const emailErrorMessage = 'Please enter email address in small letters.';
 
 const validateEmail = () => {
   const lowercaseEmail = emailInput.value.toLowerCase();
