@@ -4,10 +4,10 @@ const emailContainer = document.querySelector('.email-container');
 const emailInput = document.getElementById('email');
 const errorMessageContainer = document.querySelector('.error-message');
 const formElement = document.querySelectorAll('textarea.labeled-element, .labeled-element > input');
-let formData = {'name': '', 'email': '', 'message': ''};
-if(localStorage.getItem('formdata') !== null) {
+let formData = { name: '', email: '', message: '' };
+if (localStorage.getItem('formdata') !== null) {
   formData = JSON.parse(localStorage.getItem('formdata'));
-} 
+}
 
 const validateEmail = () => {
   const lowercaseEmail = emailInput.value.toLowerCase();
@@ -29,7 +29,7 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-formElement.forEach((formItem) => {  
+formElement.forEach((formItem) => {
   formItem.value = formData[formItem.name];
   formItem.addEventListener('input', (e) => {
     formData[e.target.name] = e.target.value;
