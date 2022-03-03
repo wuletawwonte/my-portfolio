@@ -8,10 +8,9 @@ const validateEmail = () => {
     emailContainer.classList.add('email-error');
     emailInput.focus();
     return false;
-  } else {
-    emailContainer.classList.remove('email-error');
-    return true;
   }
+  emailContainer.classList.remove('email-error');
+  return true;
 };
 
 contactForm.addEventListener('submit', (event) => {

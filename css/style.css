@@ -388,7 +388,7 @@ header {
   border: 1px solid red;
 }
 
-.email-error:before {
+.email-error::before {
   content: "Please write your email address in small letters.";
   color: red;
   font-size: 12px;
