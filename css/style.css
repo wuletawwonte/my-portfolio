@@ -346,7 +346,7 @@ header {
 .labeled-element > input {
   border: none;
   padding: 0;
-  margin: 4px 0 8px 0;
+  margin: 4px 0 5px 0;
   color: #1a2236;
   font-weight: 400;
 }
@@ -359,7 +359,7 @@ header {
 .labeled-element > label {
   color: black;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .contact-form > textarea {
@@ -381,6 +381,22 @@ header {
   border: none;
   padding: 10px 68px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.email-error {
+  border: 1px solid red;
+}
+
+.email-error:before {
+  content: "Please write your email address in small letters.";
+  color: red;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.email-error:focus-within {
+  border: 1px solid red;
 }
 
 /* Footer part styling starts here */
