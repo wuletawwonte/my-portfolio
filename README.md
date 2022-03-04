@@ -29,14 +29,14 @@
 - Twitter: [@wuletaww](https://twitter.com/wuletaww)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/wuletaw-wonte)
 ### Contributors
+
 👤 **Rio (Razvan)**
-
 - GitHub: [@razvanges](https://github.com/razvanges)
+
 👤 **Nwachan Theophile**
-
 - GitHub: [@Theophileaseh](https://github.com/Theophileaseh)
-👤 **Cédric KOSSI**
 
+👤 **Cédric KOSSI**
 - GitHub: [@kosher9](https://github.com/kosher9)
 
 
