@@ -1,7 +1,7 @@
 
 # Wuletaw Wonte Portfolio
 
-> Portfolio of Wuletaw Wonte, a full stack web developer based in Ethiopia. 
+> Portfolio of Wuletaw Wonte, a full stack web developer based in Ethiopia. This website is mobile first, follows responsive design principles.
 
 
 ## Built With
